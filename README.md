@@ -1,80 +1,72 @@
-# IMDB Movie Analysis
+# **IMDB Movie Analysis**
 
-**Objective:**
+## **Objective**  
+This project explores and analyzes the IMDB Movies dataset to uncover insights into movie trends, genre popularity, and factors influencing movie success. Using Python and libraries like **Pandas**, **NumPy**, **Seaborn**, and **Matplotlib**, the analysis answers specific business questions and delivers actionable recommendations to help IMDB better understand its data.
 
-As a data analyst intern at IMDB, you have been tasked with exploring and analyzing the IMDB Movies dataset. Your goal is to answer specific business questions, gain insights into movie trends, and deliver actionable recommendations. Using Python and libraries such as Pandas, NumPy, Seaborn, and Matplotlib, perform analysis to help IMDB better understand genre popularity, rating trends, and factors influencing movie success.
+---
 
-**Dataset:** https://drive.google.com/file/d/1lruT50ZWD4PtvDbIn4VnepZvSoeO9BrA/view?usp=sharing
+## **Dataset**  
+The dataset used in this analysis is available at:  
+[IMDB Movies Dataset](https://drive.google.com/file/d/1lruT50ZWD4PtvDbIn4VnepZvSoeO9BrA/view?usp=sharing)  
 
-**Tasks:**
+Analysis Summary Link : 
+https://docs.google.com/document/d/1X6Hy1KSsvCyovFm46JS9mvMUTsUnCGTb/edit
 
-# 1. Project Setup and Data Loading
-- Task: Load the dataset and perform initial setup.
+Each row in the dataset represents a movie, and the columns include attributes like budget, revenue, genre, ratings, and release year.
 
-Questions:
-- What libraries are required for this project, and why are they useful in data analysis?
-- Load the dataset. What is the shape of the dataset? What does each row and column represent?
+---
 
-# 2. Data Overview and Basic Exploration
-- Task: Explore the structure and composition of the dataset.
+## **Key Libraries Used**  
+1. **Pandas**: For data manipulation and cleaning.  
+2. **NumPy**: For numerical operations and handling missing values.  
+3. **Matplotlib**: For creating static visualizations.  
+4. **Seaborn**: For advanced statistical visualizations.  
 
-Questions:
-- Use .info() to understand the data types and missing values. What potential issues can you spot?
-- Describe the main characteristics of each column using .describe(). What can you infer from the mean, median, and distribution of numerical columns?
+---
 
-# 3. Data Cleaning
-- Task: Address missing values, data types, and outliers.
+## **Steps and Questions Addressed**  
 
-Questions:
-- Which columns contain missing values? How would you handle them?
-- Are there any columns where data types need conversion (e.g., date, ratings)? Explain your decision.
+### **1. Data Overview and Basic Exploration**  
+- Used `.info()` to examine data types and missing values.  
+- Generated summary statistics using `.describe()` to understand numerical columns.  
+- Identified potential data quality issues like missing values, incorrect data types, or outliers.  
 
-# 4. Univariate Analysis: Explore each column individually.
-- Task: Perform univariate analysis on numerical and categorical variables.
+### **2. Data Cleaning**  
+- Handled missing values appropriately, depending on their significance.  
+- Converted data types, such as dates and numeric fields, for accurate analysis.  
+- Addressed outliers in numerical columns like budget and revenue.  
 
-Questions:
-- What is the distribution of movie runtimes? Plot a histogram and describe its shape.
-- What are the most common genres in the dataset? Use a bar chart to show their distribution.
+### **3. Univariate Analysis**  
+- Analyzed the distribution of scores using histograms.  
+- Identified the most common genres using bar charts.  
 
-# 5. Bivariate Analysis: Explore relationships between two variables.
-- Task: Use scatter plots, box plots, and correlation analysis.
+### **4. Bivariate Analysis**  
+- **Budget vs. Revenue**: Used scatter plots to explore their relationship.  
+- Analyzed how ratings vary by country using box plots.  
+- Calculated correlation coefficients to determine relationships between scores, budgets, and revenues.  
 
-Questions:
-- Is there a relationship between a movie’s runtime and its rating? Plot a scatter plot and describe any observed trend.
-- How do ratings vary by genre? Use a boxplot to visualize the differences in ratings across genres.
-- Is there a correlation between the number of votes a budget and revenue? Create a scatter plot and calculate the correlation coefficient. What can you conclude?
+### **5. Genre-Specific Analysis**  
+- Determined the genre with the highest average rating.  
+- Visualized the popularity of genres over time by plotting the number of movies released per genre each year.  
 
-# 6. Genre-Specific Analysis
-- Task: Delve deeper into the genre of movies.
+### **6. Year and Trend Analysis**  
+- Examined how average movie ratings have changed over the years using line plots.  
+- Identified years with the highest and lowest movie releases using bar plots.  
 
-Questions:
-- Which genre has the highest average rating? Calculate the average rating for each genre and plot the results.
-- How does the popularity of genres vary over time? Plot the number of movies released per genre each year.
+### **7. Multivariate Analysis**  
+- Identified the most popular genres in each decade using bar plots.  
+- Analyzed the relationship between genre, release year, and average ratings.  
 
-# 7. Year and Trend Analysis
-- Task: Analyze trends over time.
+---
 
-Questions:
-- How has the average movie rating changed over the years? Plot the average rating for each year.
-- Which years had the highest and lowest number of movie releases? Plot the number of movies released each year.
+## **Key Insights**  
+1. **Genre Popularity**: Some genres consistently perform better in terms of ratings, while others dominate in terms of frequency.  
+2. **Budget and Revenue Relationship**: A positive correlation exists between a movie's budget and its revenue, with high-budget movies generally earning more.  
+3. **Trends Over Time**: Average ratings and genre popularity have varied significantly over the decades.  
 
-# 8. Multivariate Analysis: Analyze multiple variables together.
-- Task: Combine insights from multiple columns to explore complex relationships.
+---
 
-Questions:
-- Which genres are most popular in each decade? Create a bar plot showing the most frequent genres by decade.
-- Plot a heatmap or pairplot to examine relationships between budget, revenue, scores.
-- Are there specific genres or release years with higher-rated movies? Group by genre and year, then analyze the average rating.
-
-# 9. Insights and Summary
-- Task: Summarize key findings.
-  
-Questions:
-- Based on your analysis, what are three major insights you learned about movie trends, popular genres, or movie ratings?
-- What additional questions could be explored with this dataset, or what other data would be helpful to gain a deeper understanding?
-
-# Technologies Used:
-- Python: Core programming language.
-- Modules:
-- random: For generating credentials and account numbers.
-- datetime: For transaction timestamping.
+## **Future Exploration**  
+- Investigate the impact of directors, actors, or production studios on movie success.  
+- Analyze geographic trends in movie ratings and revenues.  
+- Examine the effect of runtime on audience satisfaction and ratings.  
