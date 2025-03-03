@@ -9,10 +9,6 @@ This project explores and analyzes the IMDB Movies dataset to uncover insights i
 The dataset used in this analysis is available at:  
 [IMDB Movies Dataset](https://drive.google.com/file/d/1lruT50ZWD4PtvDbIn4VnepZvSoeO9BrA/view?usp=sharing)  
 
-Analysis Summary Link : 
-https://docs.google.com/document/d/1X6Hy1KSsvCyovFm46JS9mvMUTsUnCGTb/edit
-
-Each row in the dataset represents a movie, and the columns include attributes like budget, revenue, genre, ratings, and release year.
 
 ---
 
